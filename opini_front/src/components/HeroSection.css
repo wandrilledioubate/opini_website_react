@@ -1,0 +1,83 @@
+.hero {
+    padding-left: 340px;
+    padding-right: 340px;
+    text-align: center;
+}
+  
+  .hero-title {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+    font-size: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top:10px ;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text {
+    font-size: 14px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  
+  .hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+  }
+  
+  .cta-button-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 25px;
+    font-size: 14px;
+    background-color: #765BF3;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+    font-size: 13px;
+
+  }
+
+  
+  .button-icon {
+    margin-right: 14px; 
+
+  }
+
+  .cta-button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 25px;
+    background: rgba(118, 91, 243, 0.17);
+    border: 1px solid #765BF3;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #765BF3;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+    font-size: 13px;
+  }
+  
+  .cta-button:hover {
+    background-color: #ee2200;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #CB271E, #FFB703, #67B926);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

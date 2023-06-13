@@ -1,0 +1,19 @@
+
+.carrousel-section {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .carrousel-title {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .carousel .slide img {
+    max-width: 515px;
+    height: auto;
+    object-fit: cover; /* pour conserver les proportions de l'image */
+  }
+  

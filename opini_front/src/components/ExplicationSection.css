@@ -1,0 +1,26 @@
+.explication {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .explication-title {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .explication-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .explication-link {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .explication-link:hover {
+    text-decoration: underline;
+  }
+  
