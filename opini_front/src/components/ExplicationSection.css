@@ -1,21 +1,27 @@
 .explication {
-    padding: 30px;
+    padding: 60px;
+    padding-left: 140px;
+    padding-right: 140px;
     text-align: center;
   }
   
   .explication-title {
-    font-size: 25px;
+    font-size: 23px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .explication-text {
+    color: #787878;
+    margin-bottom: 10px;
+    font-weight: 500;
     font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
+    line-height: 25px;
+    text-align: justify;
   }
   
   .explication-link {
+    text-align: start;
     color: #007BFF;
     text-decoration: none;
   }
