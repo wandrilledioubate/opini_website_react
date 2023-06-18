@@ -1,25 +1,28 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/opini_logo.png';  
 
 const Header = () => (
   <header className="header">
     <div className="logo">
-        <img src={logo} alt="Logo" className="logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
     </div>
     
     <nav className="navbar">
-        <a href="/concept">Le concept</a>
-        <a href="/testIA">Tester notre IA 🚀</a>
-        <a href="/team">Notre équipe</a>
+        <Link to="/concept">Le concept</Link>
+        <Link to="/testIA">Tester notre IA 🚀</Link>
+        <Link to="/team">Notre équipe</Link>
     </nav>
 
     <div className="cta-container">
-        <a href="/concept" className="cta">Nous contacter</a>
+        <Link to="/concept" className="cta">Nous contacter</Link>
     </div>
   </header>
 );
 
 export default Header;
+
 
