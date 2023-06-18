@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import play_icon from '../assets/play_icon.svg';  
+import { Link } from 'react-router-dom';
 
 
 function HeroSection() {
@@ -15,7 +16,9 @@ function HeroSection() {
                         <span>Regarder la démo</span>
                     </button>
                 </a>
-                <button className="cta-button-2">Tester notre notre IA 🚀</button>
+                <Link to="/testIA">
+                    <button className="cta-button-2">Tester notre notre IA 🚀</button>
+                </Link>            
             </div>
         </section>
     );

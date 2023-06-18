@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import TestAI from './components/pages/TestAI';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/testAI' element={<TestAI />} />
+          <Route path='/testIA' element={<TestAI />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

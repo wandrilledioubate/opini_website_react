@@ -1,0 +1,12 @@
+.footer {
+    height: 100px; /* Hauteur du footer */
+    width: 100%; /* Largeur du footer */
+    background-color: #282c34; /* Couleur de fond du footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Couleur du texte du footer */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}

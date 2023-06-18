@@ -18,7 +18,9 @@ const Header = () => (
     </nav>
 
     <div className="cta-container">
-        <Link to="/concept" className="cta">Nous contacter</Link>
+      <a href="mailto:wandrille.dioubate@efrei.net,salah.boughanmi@efrei.net" className="cta">
+          Nous contacter
+      </a>
     </div>
   </header>
 );

@@ -5,7 +5,7 @@
   }
   
   .carrousel-title {
-    font-size: 25px;
+    font-size: 23px;
     color: #333;
     margin-bottom: 20px;
   }
@@ -14,6 +14,6 @@
   .carousel .slide img {
     max-width: 515px;
     height: auto;
-    object-fit: cover; /* pour conserver les proportions de l'image */
+    object-fit: cover; 
   }
   

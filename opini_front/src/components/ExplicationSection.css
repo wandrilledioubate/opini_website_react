@@ -1,7 +1,7 @@
 .explication {
     padding: 60px;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 200px;
+    padding-right: 200px;
     text-align: center;
   }
   
@@ -15,14 +15,17 @@
     color: #787878;
     margin-bottom: 10px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
     text-align: justify;
   }
   
   .explication-link {
-    text-align: start;
-    color: #007BFF;
+    text-align: left; 
+    float: left;   
+    color: #765BF3;
+    font-weight: 700;
+    font-size: 15px;
     text-decoration: none;
   }
   

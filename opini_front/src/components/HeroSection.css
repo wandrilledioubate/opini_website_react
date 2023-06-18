@@ -1,4 +1,6 @@
 .hero {
+    padding-top: 30px;
+    padding-bottom: 40px;
     padding-left: 340px;
     padding-right: 340px;
     text-align: center;
@@ -46,8 +48,6 @@
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700; 
-    font-size: 13px;
-
   }
 
   
@@ -57,6 +57,7 @@
   }
 
   .cta-button-2 {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +70,7 @@
     color: #765BF3;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700; 
-    font-size: 13px;
+    font-size: 14px;
   }
   
   .cta-button:hover {
@@ -81,3 +82,4 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
