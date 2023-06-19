@@ -13,7 +13,7 @@ const Header = () => (
     
     <nav className="navbar">
         <Link to="/concept">Le concept</Link>
-        <Link to="/testIA">Tester notre IA 🚀</Link>
+        <Link to="/testIA">Testez notre IA 🚀</Link>
         <Link to="/team">Notre équipe</Link>
     </nav>
 

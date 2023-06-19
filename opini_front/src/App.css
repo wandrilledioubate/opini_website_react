@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes spin-shrink {
+  0% { 
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(360deg);
+  }
+  100% { 
+    transform: scale(0) rotate(360deg);
+  }
+}
+
+
+.logo_anim {
+  padding-top: 180px;
+  animation: spin-shrink 2s ease-in-out forwards;
+}
