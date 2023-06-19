@@ -1,14 +1,16 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
+import InputLink from '../InputLink';
+import BarreProgression from '../BarreProgression';
 
 
-function TestAI() {
+function Home() {
   return (
     <>
-      <HeroSection />
+      <InputLink />
+      <BarreProgression />
     </>
   );
 }
 
-export default TestAI;
+export default Home;

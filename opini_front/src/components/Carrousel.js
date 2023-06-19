@@ -10,7 +10,7 @@ import logo3 from '../assets/carrousel3.png';
 function Carrousel() {
     return (
         <section className="carrousel-section">
-            <h2 className="carrousel-title">Titre du carrousel</h2>
+            <h2 className="carrousel-title">Une extension simple et facile à comprendre !</h2>
             <Carousel
                 showArrows={false}
                 showThumbs={false}

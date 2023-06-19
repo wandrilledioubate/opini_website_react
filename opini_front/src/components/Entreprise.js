@@ -10,7 +10,7 @@ import airbnb from '../assets/airbnb.png';
 function Entreprise() {
   return (
     <div className="entreprise">
-      <h1 className="titre">Titre de la page Entreprise</h1>
+      <h1 className="titre">Ils nous ont fait confiance...</h1>
       <div className="logo-container">
         <div className="logo-card">
           <img src={tripadvisor} alt="logo1" className="logo"/>

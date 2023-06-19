@@ -1,6 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './BarreProgression.css';
 
+class BarreProgression extends React.Component {
+    render() {
+        return (
+            <div className="progress-container">
+                <div className="progress-bar" style={{width: `${this.props.pourcentage}%`}}></div>
+                <p className="progress-text">La progression est de {this.props.pourcentage}%</p>
+            </div>
+        );
+    }
+}
+
+export default BarreProgression;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 const BarreProgression = () => {
   const [pourcentage, setPourcentage] = useState(0);
 
@@ -30,3 +67,5 @@ const BarreProgression = () => {
 };
 
 export default BarreProgression;
+*/
+

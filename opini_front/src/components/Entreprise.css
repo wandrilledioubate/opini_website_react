@@ -1,12 +1,13 @@
 .entreprise {
     text-align: center;
     padding: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+    padding-top: 40px;
   }
   
   .titre {
     font-size: 23px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .logo-container {
