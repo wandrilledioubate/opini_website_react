@@ -1,25 +1,37 @@
-.inputLink {
+.input-component {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-.inputLink h2 {
-    margin-bottom: 20px;
+
+.input-title-1 {
+    font-size: 23px;
+    color: #333;
+    font-weight: 700; 
+    margin-bottom: 0px;
+
 }
 
-.inputLink input {
-    margin-bottom: 10px;
-    padding: 10px;
+.input-title-2 {
+    font-size: 14px;
+    color: #666;
+    font-weight: 700; 
+    margin-top: 3px;
+
+}
+
+
+.InputLink input {
+
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.inputLink button {
+.InputLink button {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -28,6 +40,10 @@
     cursor: pointer;
 }
 
-.inputLink button:hover {
+.InputLink button:hover {
     background-color: #45a049;
+}
+
+.error {
+    color: red;
 }

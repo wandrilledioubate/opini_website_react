@@ -1,71 +1,39 @@
 import React from 'react';
 import './BarreProgression.css';
 
-class BarreProgression extends React.Component {
-    render() {
-        return (
-            <div className="progress-container">
-                <div className="progress-bar" style={{width: `${this.props.pourcentage}%`}}></div>
-                <p className="progress-text">La progression est de {this.props.pourcentage}%</p>
+const BarreProgression = ({ data }) => {
+    const random_number = data?.random_number;
+    const mots_positifs = data?.mots_positifs;
+    const mots_negatifs = data?.mots_negatifs;
+
+    return (
+        <div className="container">
+            <h2 className="titre">D'après Opini, le taux de satisfaction de 'Nom hôtel' est :</h2>
+            <div className="progressBar">
+                <div className={`progressBarFill`} style={{width: `${random_number}%`}}>
+                    {random_number}%
+                </div>
             </div>
-        );
-    }
-}
-
-export default BarreProgression;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-const BarreProgression = () => {
-  const [pourcentage, setPourcentage] = useState(0);
-
-  useEffect(() => {
-    // Appel à l'API pour récupérer le pourcentage de remplissage
-    // Mettez à jour le state "pourcentage" avec la valeur récupérée
-
-    // Exemple d'appel à l'API fictive (à remplacer avec votre propre logique)
-    const fetchProgressFromAPI = async () => {
-      try {
-        const response = await fetch('https://votre-api.com/progression');
-        const data = await response.json();
-        setPourcentage(data.pourcentage);
-      } catch (error) {
-        console.error('Erreur lors de la récupération du pourcentage de remplissage :', error);
-      }
-    };
-
-    fetchProgressFromAPI();
-  }, []);
-
-  return (
-    <div className="progress-bar">
-      <div className="progress-bar-fill" style={{ width: `${pourcentage}%` }}></div>
-    </div>
-  );
+            <div className='word-feedback'>
+              <div>
+                  <h3 className="titre">Points positifs</h3>
+                  <ul className="liste">
+                      {mots_positifs && mots_positifs.map((mot, index) => (
+                          <li key={index}>{mot}</li>
+                      ))}
+                  </ul>
+              </div>
+              <div>
+                  <h3 className="titre">Points négatifs</h3>
+                  <ul className="liste">
+                      {mots_negatifs && mots_negatifs.map((mot, index) => (
+                          <li key={index}>{mot}</li>
+                      ))}
+                  </ul>
+              </div>
+            </div>
+        </div>
+    );
 };
 
 export default BarreProgression;
-*/
-
