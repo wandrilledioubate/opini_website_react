@@ -4,8 +4,10 @@ import nltk
 from tqdm import tqdm
 from nltk.sentiment import SentimentIntensityAnalyzer
 from datetime import datetime
-import json
 
+def import_json(file):
+    data = pd.read_json(file)
+    return data
 
 def import_json(file):
     with open(file, 'r') as f:
@@ -143,7 +145,7 @@ def add_label(df):
 
 
 def treat(json_file):
-    json_file = './output.json'
+    json_file = './output.son'
     data = import_json(json_file)
     data_del = delete_col(data)
     data_sentiment = add_sentiment(data_del)

@@ -1,63 +1,45 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS, cross_origin
-import requests
-import asyncio
-import json
-import math
-from typing import TypedDict
-import httpx
-import re
-from bs4 import BeautifulSoup
-import os
-import json
-import emoji
-import pandas as pd
-import nltk
-from tqdm import tqdm
-from nltk.sentiment import SentimentIntensityAnalyzer
-from datetime import datetime
-
+from fastapi import FastAPI, Query
 from scrapping import scrap
-from traitement import treat
-# from deep_model import apply_model
+from fastapi.middleware.cors import CORSMiddleware
+
+# from traitement import treat
+# from model_deep import deepModel
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Vous pouvez spécifier les domaines autorisés ici
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
-app = Flask(__name__)
-cors = CORS(app)
-
-@app.route('/process_url', methods=['POST'])
-def process_url():
-    data = request.get_json()
+@app.post("/opini_ia")
+def process_data(url):
+    # Scrapper les données
+    data = scrap(url)
     
-    if 'url' not in data:
-        return jsonify({'error': 'No URL provided'}), 400
-    
-    url = data['url']
-    
-    # Scrap the data
-    scraped_data = scrap(url)
-    if not scraped_data:
-        return jsonify({'error': 'Failed to scrap data'}), 500
-    
-    # Treat the data
-    treated_data = treat(scraped_data)
-    if not treated_data:
-        return jsonify({'error': 'Failed to treat data'}), 500
-    
-    data_final = treated_data.to_csv('hotel_data.csv', index=False)
-
     """
-    # Apply the model
-    model_result = apply_model(treated_data)
-    if model_result is None:
-        return jsonify({'error': 'Failed to apply model'}), 500
-
-    # If everything is successful, return the result
-    return jsonify({'result': model_result}), 200
+    # Traiter les données
+    treated_data = treat(data)
+    
+    # Effectuer le modèle de machine learning
+    result = deepModel(treated_data)
+    
+    # Formater la sortie
+    percentage = round(result * 100, 2)
+    output = {
+        "percentage": percentage,
+        "phrases_negatives": ["Phrase négative 1", "Phrase négative 2", "Phrase négative 3"],
+        "phrases_positives": ["Phrase positive 1", "Phrase positive 2", "Phrase positive 3"]
+    }
     """
-    return jsonify({'result': data_final}), 200
-
-
+    # return output
+    return data
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=5000)
+
+    

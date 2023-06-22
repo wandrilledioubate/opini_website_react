@@ -144,14 +144,13 @@ def save_to_json(data, filename):
     with open(filename, 'w') as f:
         if 'reviews' in data:
             for item in data['reviews']:
-                item['rating'] = str(int(item['rating']))#note hotel
-                json.dump(item, f)
-                f.write('\n')
+                item['rating'] = str(int(item['rating']))  # note hotel
+            json.dump(data['reviews'], f)
         else:
             for item in data:
-                item['rating'] = str(int(item['rating']) / 10)#note resto
-                json.dump(item, f)
-                f.write('\n')
+                item['rating'] = str(int(item['rating']) / 10)  # note resto
+            json.dump(data, f)
+
 
 
 
@@ -177,7 +176,12 @@ async def scrap(url):
             "accept-encoding": "gzip, deflate, br",
         }
         async with httpx.AsyncClient(limits=limits, timeout=httpx.Timeout(15.0), headers=BASE_HEADERS) as session:
-            result = await scrape_hotel(url, session)
-            if result is not None:  # vérifiez si le résultat est None avant de l'envoyer à save_to_json
+            result =  scrape_hotel(url, session)
+            if result is not None:  
                 save_to_json(result, 'output.json')
 
+"""
+if __name__ == "__main__":
+    asyncio.run(scrap('https://www.tripadvisor.com//Restaurant_Review-g58471-d866189-Reviews-Akasaka_Restaurant-Federal_Way_Washington.html'))
+    
+"""
