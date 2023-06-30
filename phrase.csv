@@ -1,0 +1,76 @@
+type,sentiment,phrase
+hotel,positif,Très bel emplacement
+hotel,negatif,Lit trop dur
+hotel,positif,Personnel fantastique
+hotel,negatif,Service lent
+hotel,positif,Vue incroyable
+restaurant,positif,Excellent service
+restaurant,negatif,Trop bruyant
+restaurant,positif,Cuisine délicieuse
+restaurant,negatif,Attente trop longue
+restaurant,positif,Ambiance agréable
+activite,positif,Très amusant
+activite,negatif,Trop cher
+activite,positif,Guide compétent
+activite,negatif,Peu organisé
+activite,positif,Expérience inoubliable
+hotel,positif,Chambres propres
+hotel,negatif,Ascenseur lent
+hotel,positif,Excellent petit déjeuner
+hotel,negatif,Bruit de rue
+hotel,positif,WiFi rapide
+restaurant,positif,Vin savoureux
+restaurant,negatif,Portions petites
+restaurant,positif,Choix végétarien
+restaurant,negatif,Plats froids
+restaurant,positif,Café délicieux
+activite,positif,Vues magnifiques
+activite,negatif,Longue file d'attente
+activite,positif,Super pour les enfants
+activite,negatif,Parking cher
+activite,positif,Personnel aimable
+hotel,positif,Piscine propre
+hotel,negatif,Salle de bain petite
+hotel,positif,Service de chambre rapide
+hotel,negatif,Manque de prises
+hotel,positif,Décoration moderne
+restaurant,positif,Menu diversifié
+restaurant,negatif,Service lent
+restaurant,positif,Excellent sushi
+restaurant,negatif,Salle bruyante
+restaurant,positif,Desserts délicieux
+activite,positif,Informations utiles
+activite,negatif,Trop de monde
+activite,positif,Horaires flexibles
+activite,negatif,Billets chers
+activite,positif,Super spectacle
+hotel,positif,Service impeccable
+hotel,negatif,Décoration démodée
+hotel,positif,Calme et tranquille
+hotel,negatif,Mauvais éclairage
+hotel,positif,Salle de gym équipée
+restaurant,positif,Pizza délicieuse
+restaurant,negatif,Cuisine trop épicée
+restaurant,positif,Chef talentueux
+restaurant,negatif,Attente interminable
+restaurant,positif,Cadre charmant
+activite,positif,Super exposition
+activite,negatif,Spectacle décevant
+activite,positif,Parcours intéressant
+activite,negatif,Audio-guide mauvais
+activite,positif,Plage magnifique
+hotel,positif,Grande suite
+hotel,negatif,Mauvaise isolation
+hotel,positif,Situation idéale
+hotel,negatif,Accueil froid
+hotel,positif,Draps propres
+restaurant,positif,Cuisine innovante
+restaurant,negatif,Prix exorbitants
+restaurant,positif,Serveurs sympathiques
+restaurant,negatif,Ambiance désagréable
+restaurant,positif,Viande tendre
+activite,positif,Guide passionné
+activite,negatif,Visite trop rapide
+activite,positif,Aire de jeux géniale
+activite,negatif,Manque de bancs
+activite,positif,Animations variées
