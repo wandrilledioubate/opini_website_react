@@ -1,76 +1,72 @@
 type,sentiment,phrase
-hotel,positif,Très bel emplacement
+hotel,positif,Tres bel emplacement
 hotel,negatif,Lit trop dur
 hotel,positif,Personnel fantastique
 hotel,negatif,Service lent
 hotel,positif,Vue incroyable
 restaurant,positif,Excellent service
 restaurant,negatif,Trop bruyant
-restaurant,positif,Cuisine délicieuse
+restaurant,positif,Cuisine delicieuse
 restaurant,negatif,Attente trop longue
-restaurant,positif,Ambiance agréable
-activite,positif,Très amusant
-activite,negatif,Trop cher
-activite,positif,Guide compétent
-activite,negatif,Peu organisé
-activite,positif,Expérience inoubliable
+restaurant,positif,Ambiance agreable
 hotel,positif,Chambres propres
 hotel,negatif,Ascenseur lent
-hotel,positif,Excellent petit déjeuner
+hotel,positif,Excellent petit dejeuner
 hotel,negatif,Bruit de rue
 hotel,positif,WiFi rapide
 restaurant,positif,Vin savoureux
 restaurant,negatif,Portions petites
-restaurant,positif,Choix végétarien
+restaurant,positif,Choix vegetarien
 restaurant,negatif,Plats froids
-restaurant,positif,Café délicieux
-activite,positif,Vues magnifiques
-activite,negatif,Longue file d'attente
-activite,positif,Super pour les enfants
-activite,negatif,Parking cher
-activite,positif,Personnel aimable
+restaurant,positif,Cafe delicieux
 hotel,positif,Piscine propre
 hotel,negatif,Salle de bain petite
 hotel,positif,Service de chambre rapide
 hotel,negatif,Manque de prises
-hotel,positif,Décoration moderne
-restaurant,positif,Menu diversifié
+hotel,positif,Decoration moderne
+restaurant,positif,Menu diversifie
 restaurant,negatif,Service lent
 restaurant,positif,Excellent sushi
 restaurant,negatif,Salle bruyante
-restaurant,positif,Desserts délicieux
-activite,positif,Informations utiles
-activite,negatif,Trop de monde
-activite,positif,Horaires flexibles
-activite,negatif,Billets chers
-activite,positif,Super spectacle
+restaurant,positif,Desserts delicieux
 hotel,positif,Service impeccable
-hotel,negatif,Décoration démodée
+hotel,negatif,Decoration demodee
 hotel,positif,Calme et tranquille
-hotel,negatif,Mauvais éclairage
-hotel,positif,Salle de gym équipée
-restaurant,positif,Pizza délicieuse
-restaurant,negatif,Cuisine trop épicée
+hotel,negatif,Mauvais eclairage
+hotel,positif,Salle de gym equipee
+restaurant,positif,Pizza delicieuse
+restaurant,negatif,Cuisine trop epicee
 restaurant,positif,Chef talentueux
 restaurant,negatif,Attente interminable
 restaurant,positif,Cadre charmant
-activite,positif,Super exposition
-activite,negatif,Spectacle décevant
-activite,positif,Parcours intéressant
-activite,negatif,Audio-guide mauvais
-activite,positif,Plage magnifique
-hotel,positif,Grande suite
-hotel,negatif,Mauvaise isolation
-hotel,positif,Situation idéale
-hotel,negatif,Accueil froid
-hotel,positif,Draps propres
-restaurant,positif,Cuisine innovante
-restaurant,negatif,Prix exorbitants
-restaurant,positif,Serveurs sympathiques
-restaurant,negatif,Ambiance désagréable
-restaurant,positif,Viande tendre
-activite,positif,Guide passionné
-activite,negatif,Visite trop rapide
-activite,positif,Aire de jeux géniale
-activite,negatif,Manque de bancs
-activite,positif,Animations variées
+hotel,positif,Vue imprenable
+hotel,negatif,Reservation annulee au dernier moment
+hotel,positif,Service chaleureux
+hotel,negatif,Chambre mal entretenue
+hotel,positif,Vue sur la mer
+restaurant,positif,Plats raffines
+restaurant,negatif,Service negligé
+restaurant,positif,Atmosphere romantique
+restaurant,negatif,Qualite des ingredients mediocre
+restaurant,positif,Service attentionne
+hotel,positif,Tres belle vue
+hotel,negatif,Reservation annulee sans preavis
+hotel,positif,Personnel accueillant
+hotel,negatif,Chambres sales
+hotel,positif,Emplacement pratique
+restaurant,positif,Cuisine inventive
+restaurant,negatif,Service inattentif
+restaurant,positif,Vue panoramique
+restaurant,negatif,Plats mal prepares
+restaurant,positif,Selection de vins impressionnante
+hotel,positif,Navette gratuite
+hotel,negatif,Problemes de climatisation
+hotel,positif,Accueil chaleureux
+hotel,negatif,Problemes d'insonorisation
+hotel,positif,Petit dejeuner copieux
+restaurant,positif,Menu saisonnier
+restaurant,negatif,Service inattentif
+restaurant,positif,Vue sur le fleuve
+restaurant,negatif,Carte limitee
+restaurant,positif,Service rapide et efficace
+hotel,positif,Spa relaxant

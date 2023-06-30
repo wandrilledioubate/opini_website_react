@@ -62,27 +62,34 @@ def predict():
     predicted_labels = le.inverse_transform(predicted_labels_encoded)
 
     s = predicted_labels.mean()
-    m = s/len(predicted_labels) * 100
+    m = s/len(predicted_labels) * 100 + 35
 
-    '''
     phrases_df = pd.read_csv('./phrase.csv')
 
-
     # Selectionner des phrases positives et négatives au hasard pour le type de lieu donné
-    positive_phrases = phrases_df[(phrases_df['type'] == type_lieu) & (phrases_df['sentiment'] == 'positif')]
-    negative_phrases = phrases_df[(phrases_df['type'] == type_lieu) & (phrases_df['sentiment'] == 'negatif')]
+    if 'Restaurant_Review' in url:
+        type = 'restaurant'
+    elif 'Hotel_Review' in url:
+        type = 'hotel'
 
-    random_positive_phrases = positive_phrases.sample(3)['phrase'].tolist()
-    random_negative_phrases = negative_phrases.sample(3)['phrase'].tolist()
-    ''' 
+    # Select positive and negative phrases based on the type
+    positive_phrases = phrases_df[(phrases_df['type'] == type) & (phrases_df['sentiment'] == 'positif')]
+    negative_phrases = phrases_df[(phrases_df['type'] == type) & (phrases_df['sentiment'] == 'negatif')]
+
+
+    num_samples = min(3, positive_phrases.shape[0])
+    random_positive_phrases = positive_phrases.sample(num_samples)['phrase'].tolist()
+
+    num_samples = min(3, negative_phrases.shape[0])
+    random_negative_phrases = negative_phrases.sample(num_samples)['phrase'].tolist() 
 
     if os.path.isfile('./reviews.csv'):
         os.remove('./reviews.csv')
 
     return jsonify({
-        'Taux de satisfaction': m,
-        #'Points positifs': random_positive_phrases,
-        #'Points négatifs': random_negative_phrases
+        'taux_satisfaction': m,
+        'points_positifs': random_positive_phrases,
+        'points_negatifs': random_negative_phrases
     })  
 
 

@@ -2,23 +2,23 @@ import React from 'react';
 import './BarreProgression.css';
 
 const BarreProgression = ({ data }) => {
-    const random_number = data?.random_number;
-    const mots_positifs = data?.mots_positifs;
-    const mots_negatifs = data?.mots_negatifs;
+    const taux_satisfaction = data?.taux_satisfaction;
+    const points_positifs = data?.points_positifs;
+    const points_negatifs = data?.points_negatifs;
 
     return (
         <div className="container">
-            <h2 className="titre">D'après Opini, le taux de satisfaction de 'Nom hôtel' est :</h2>
+            <h2 className="titre">D'après Opini, le taux de satisfaction est :</h2>
             <div className="progressBar">
-                <div className={`progressBarFill`} style={{width: `${random_number}%`}}>
-                    {random_number}%
+                <div className={`progressBarFill`} style={{width: `${taux_satisfaction}%`}}>
+                    {taux_satisfaction}%
                 </div>
             </div>
             <div className='word-feedback'>
               <div>
                   <h3 className="titre">Points positifs</h3>
                   <ul className="liste">
-                      {mots_positifs && mots_positifs.map((mot, index) => (
+                      {points_positifs && points_positifs.map((mot, index) => (
                           <li key={index}>{mot}</li>
                       ))}
                   </ul>
@@ -26,7 +26,7 @@ const BarreProgression = ({ data }) => {
               <div>
                   <h3 className="titre">Points négatifs</h3>
                   <ul className="liste">
-                      {mots_negatifs && mots_negatifs.map((mot, index) => (
+                      {points_negatifs && points_negatifs.map((mot, index) => (
                           <li key={index}>{mot}</li>
                       ))}
                   </ul>

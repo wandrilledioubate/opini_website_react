@@ -10,7 +10,7 @@ const InputLink = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://127.0.0.1:5000/randomize', { url })
+        axios.post('http://127.0.0.1:5000/predict', { url })
             .then(response => {
                 setData(response.data);
                 setError(null);
