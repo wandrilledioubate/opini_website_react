@@ -17,6 +17,8 @@ from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 import tensorflow_text as text
+import os
+
 
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -74,11 +76,16 @@ def predict():
     random_negative_phrases = negative_phrases.sample(3)['phrase'].tolist()
     ''' 
 
+    if os.path.isfile('./reviews.csv'):
+        os.remove('./reviews.csv')
+
     return jsonify({
         'Taux de satisfaction': m,
         #'Points positifs': random_positive_phrases,
         #'Points négatifs': random_negative_phrases
     })  
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
