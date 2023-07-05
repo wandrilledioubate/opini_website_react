@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import TestAI from './components/pages/TestAI';
 import Concept from './components/pages/Concept';
 import logo from './assets/opini_logo.png';
+import Team from './components/pages/Team';
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='/testIA' element={<TestAI />} />
             <Route path='/concept' element={<Concept />} />
+            <Route path='/team' element={<Team />} />
           </Routes>
           <Footer />
         </Router>

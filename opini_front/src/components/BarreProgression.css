@@ -31,7 +31,7 @@
 }
 
 .progressBarFill {
-    background: linear-gradient(to right, blue, white, white, red);
+    background: grey;
 }
 
 .liste {
